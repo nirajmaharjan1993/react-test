@@ -35,10 +35,10 @@ const dishes = ["Momo", "Chowmein", "Sausages", "Chicken chilly"];
 const dishObjs = dishes.map((dish, i) => ({ id: i, name: dish }));
 export default function App() {
   return (
-    <div className="App">
+    <>
       <Header name="Niraj" />
       <Body adjective="delicious" dishes={dishObjs} />
       <Footer year={new Date().getFullYear()} />
-    </div>
+    </>
   );
 }
