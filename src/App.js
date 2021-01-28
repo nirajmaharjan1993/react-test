@@ -20,7 +20,7 @@ function Body() {
 function Footer() {
   return (
     <footer>
-      <h3>Footer</h3>
+      <p>It's true.</p>
     </footer>
   );
 }
