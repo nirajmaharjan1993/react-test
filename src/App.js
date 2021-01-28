@@ -8,6 +8,6 @@ function SecretComponent() {
 function RegularComponent() {
   return <div> Everyone can see this component.</div>;
 }
-export default function App(props) {
-  return <>{props.authorised ? <SecretComponent /> : <RegularComponent />}</>;
+export default function App({ authorised }) {
+  return <>{authorised ? <SecretComponent /> : <RegularComponent />}</>;
 }
